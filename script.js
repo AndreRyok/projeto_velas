@@ -60,7 +60,7 @@ function loadProducts() {
             if (product) {
                 const message = `Olá! Gostaria de comprar a ${product.name} no valor de ${product.price}.`;
                 const encodedMessage = encodeURIComponent(message);
-                window.open(`https://wa.me/5511999999999?text=${encodedMessage}`, '_blank');
+                window.open(`https://wa.me/351924709328?text=${encodedMessage}`, '_blank');
             }
         });
     });
