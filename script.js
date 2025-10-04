@@ -72,6 +72,7 @@ hamburger.addEventListener('click', () => {
     navMenu.classList.toggle('active');
 });
 
+
 // Fechar menu ao clicar em um link
 document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', () => {
@@ -118,3 +119,4 @@ document.addEventListener('DOMContentLoaded', () => {
     const currentYear = new Date().getFullYear();
     document.querySelector('.footer-bottom p').textContent = `© ${currentYear} XXX. Todos os direitos reservados.`;
 });
+

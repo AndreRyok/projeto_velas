@@ -24,7 +24,10 @@ body {
     background-color: var(--light-color);
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     line-height: 1.2;
@@ -220,6 +223,21 @@ h1, h2, h3, h4 {
     box-shadow: var(--shadow);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Products Section */
 .products {
     padding: 100px 0;
@@ -410,17 +428,19 @@ h1, h2, h3, h4 {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .hero-content {
         padding-right: 0;
         margin-bottom: 3rem;
     }
-    
-    .about-content, .contact-content {
+
+    .about-content,
+    .contact-content {
         flex-direction: column;
     }
-    
-    .about-image, .contact-image {
+
+    .about-image,
+    .contact-image {
         order: -1;
         margin-bottom: 2rem;
     }
@@ -430,7 +450,7 @@ h1, h2, h3, h4 {
     .hamburger {
         display: block;
     }
-    
+
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -442,19 +462,20 @@ h1, h2, h3, h4 {
         transition: var(--transition);
         box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     }
-    
+
     .nav-menu.active {
         left: 0;
     }
-    
+
     .nav-item {
         margin: 1rem 0;
     }
-    
+
+
     .hero-title {
         font-size: 2.5rem;
     }
-    
+
     .section-title {
         font-size: 2rem;
     }
@@ -464,11 +485,11 @@ h1, h2, h3, h4 {
     .hero-title {
         font-size: 2rem;
     }
-    
+
     .section-title {
         font-size: 1.8rem;
     }
-    
+
     .products-grid {
         grid-template-columns: 1fr;
     }
