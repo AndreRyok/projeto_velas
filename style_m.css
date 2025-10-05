@@ -6,12 +6,12 @@
 }
 
 :root {
-    --primary-color: #8B7355;
-    --secondary-color: #D4B896;
-    --accent-color: #A67C52;
-    --light-color: #F5F1E8;
-    --dark-color: #3E3E3E;
-    --text-color: #333333;
+    --primary-color: #09616b9c;     
+    --secondary-color: #A9C8E3;  
+    --accent-color: #3579A0;      
+    --light-color: #4a9bab31;      
+    --dark-color: #1E2A36;         
+    --text-color: #2C3E50;         
     --white: #FFFFFF;
     --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     --transition: all 0.3s ease;
@@ -137,91 +137,6 @@ h4 {
     transition: var(--transition);
 }
 
-/* Hero Section */
-.hero {
-    display: flex;
-    align-items: center;
-    min-height: 100vh;
-    padding: 100px 20px 50px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.hero-content {
-    flex: 1;
-    padding-right: 2rem;
-}
-
-.hero-title {
-    font-size: 3.5rem;
-    margin-bottom: 1.5rem;
-    color: var(--primary-color);
-}
-
-.hero-subtitle {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    color: var(--dark-color);
-    max-width: 500px;
-}
-
-.cta-button {
-    display: inline-block;
-    background-color: var(--primary-color);
-    color: var(--white);
-    padding: 12px 30px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: var(--transition);
-    border: 2px solid var(--primary-color);
-}
-
-.cta-button:hover {
-    background-color: transparent;
-    color: var(--primary-color);
-}
-
-.hero-image {
-    flex: 1;
-    text-align: center;
-}
-
-.hero-image img {
-    max-width: 100%;
-}
-
-/* About Section */
-.about {
-    padding: 100px 0;
-    background-color: var(--white);
-}
-
-.about-content {
-    display: flex;
-    align-items: center;
-    gap: 4rem;
-}
-
-.about-text {
-    flex: 1;
-}
-
-.about-text p {
-    margin-bottom: 1.5rem;
-    font-size: 1.1rem;
-}
-
-.about-image {
-    flex: 1;
-    text-align: center;
-}
-
-.about-image img {
-    max-width: 80%;
-    border-radius: 10px;
-    box-shadow: var(--shadow);
-}
 
 
 /* Products Section */
@@ -382,13 +297,13 @@ h4 {
 }
 
 .footer-section a {
-    color: var(--light-color);
+    color: var(--secondary-color);;
     text-decoration: none;
     transition: var(--transition);
 }
 
 .footer-section a:hover {
-    color: var(--secondary-color);
+    color: var(--white);
 }
 
 .social-links {
@@ -410,16 +325,6 @@ h4 {
 
 /* Responsividade */
 @media screen and (max-width: 992px) {
-    .hero {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .hero-content {
-        padding-right: 0;
-        margin-bottom: 3rem;
-    }
-
     .about-content,
     .contact-content {
         flex-direction: column;
@@ -458,19 +363,13 @@ h4 {
     }
 
 
-    .hero-title {
-        font-size: 2.5rem;
-    }
-
     .section-title {
         font-size: 2rem;
     }
 }
 
+
 @media screen and (max-width: 480px) {
-    .hero-title {
-        font-size: 2rem;
-    }
 
     .section-title {
         font-size: 1.8rem;
@@ -523,4 +422,53 @@ h4 {
 /* Mostra o menu ao passar o mouse */
 .nav-item.dropdown:hover .dropdown-menu {
     display: block;
+}
+
+
+
+
+
+.section-header {
+  display: flex;
+  align-items: center; /* garante alinhamento vertical perfeito */
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 40px;
+  position: relative;
+  line-height: 1; /* reduz qualquer diferença de altura entre os elementos */
+}
+
+/* Botão de voltar */
+.section-header .back-button {
+  position: absolute;
+  left: 0;
+  top: 50%; /* centraliza verticalmente */
+  transform: translateY(-50%); /* ajusta o centro do botão */
+  color: var(--primary-color);
+  background: transparent;
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+  text-decoration: none;
+}
+
+/* Hover suave */
+.section-header .back-button:hover {
+  background: var(--primary-color);
+  color: var(--white);
+  transform: translate(-3px, -50%); /* mantém o centro mesmo no hover */
+}
+
+/* Título */
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin: 0; /* remove margens padrão do <h2> */
+  line-height: 1; /* garante centralização perfeita */
 }
